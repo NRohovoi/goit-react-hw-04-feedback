@@ -10,6 +10,10 @@ const Statistics = ({ good, neutral, bad, total, positiveFeedback }) => (
   </Wrapper>
 );
 Statistics.protoTypes = {
-  message: PropTypes.string.isRequired,
+  good: PropTypes.number.isRequired,
+  neutral: PropTypes.number.isRequired,
+  bad: PropTypes.number.isRequired,
+  total: PropTypes.number.isRequired,
+  positiveFeedback: PropTypes.string.isRequired,
 };
 export default Statistics;
