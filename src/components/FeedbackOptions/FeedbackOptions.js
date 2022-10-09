@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import { List, Button } from './controlbox.styled';
-const ControlBox = ({ options, onLeaveFeedback }) => {
+import { List, Button } from './FeedbackOptions.styled';
+const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <List>
       {options.map(option => {
@@ -15,7 +15,7 @@ const ControlBox = ({ options, onLeaveFeedback }) => {
     </List>
   );
 };
-ControlBox.propTypes = {
+FeedbackOptions.propTypes = {
   options: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
-export default ControlBox;
+export default FeedbackOptions;

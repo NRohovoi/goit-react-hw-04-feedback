@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Wrapper, Text, SelectedText } from './statistics.styled';
+import { Wrapper, Text, SelectedText } from './Statistics.styled';
 const Statistics = ({ good, neutral, bad, total, positiveFeedback }) => (
   <Wrapper>
     <Text>Good: {good}</Text>

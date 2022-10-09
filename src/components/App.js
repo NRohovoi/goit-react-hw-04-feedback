@@ -1,9 +1,9 @@
-import { Box } from './box.styled';
+import { Box } from './Box.styled';
 import { Component } from 'react';
-import Section from './section/section';
-import ControlBox from './controlbox/controlbox';
-import Notification from './notification/notification';
-import Statistics from './statistics/statistics';
+import Section from './Section/Section';
+import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
+import Notification from './Notification/Notification';
+import Statistics from './Statistics/Statistics';
 
 export class App extends Component {
   state = {
@@ -34,7 +34,7 @@ export class App extends Component {
     return (
       <Box>
         <Section title="Please live feedback">
-          <ControlBox
+          <FeedbackOptions
             options={options}
             onLeaveFeedback={this.handleClickButton}
           />
