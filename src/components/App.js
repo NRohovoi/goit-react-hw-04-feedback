@@ -29,6 +29,7 @@ export const App = () => {
         return;
     }
   };
+
   const total = good + neutral + bad;
   const positiveFeedback = Math.floor((good / total) * 100);
 
